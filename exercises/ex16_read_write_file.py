@@ -10,7 +10,7 @@ input("?")
 print(f"Opening file {filename}")
 file = open(filename, 'w')
 print("Cleaning file")
-file.truncate()
+# file.truncate() No need as we opened with 'w' flag
 
 print("What do you want to write there?")
 text = input("> ")
